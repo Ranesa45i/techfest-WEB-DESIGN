@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A premium parallax scrolling journey built with static HTML, CSS, and vanilla JavaScript for GitHub Pages.">
+  <title>Living Horizon | Parallax Scrolling Journey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <div class="progress" aria-hidden="true">
+    <span class="progress__bar"></span>
+  </div>
+
+  <nav class="section-nav" aria-label="Section navigation">
+    <button class="section-nav__dot is-active" type="button" data-target="home" aria-label="Go to hero section"></button>
+    <button class="section-nav__dot" type="button" data-target="cloud-cartography" aria-label="Go to cloud cartography section"></button>
+    <button class="section-nav__dot" type="button" data-target="tide-lines" aria-label="Go to tide lines section"></button>
+    <button class="section-nav__dot" type="button" data-target="glass-city" aria-label="Go to glass city section"></button>
+    <button class="section-nav__dot" type="button" data-target="night-bloom" aria-label="Go to night bloom section"></button>
+    <button class="section-nav__dot" type="button" data-target="launch-point" aria-label="Go to launch point section"></button>
+  </nav>
+
+  <main id="main-content">
+    <section class="panel panel--hero" id="home" data-section data-theme="dawn">
+      <div class="panel__scene" aria-hidden="true">
+        <svg class="scene-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+          <g class="scene-layer scene-layer--back" data-parallax data-speed="0.14">
+            <circle class="tone-2" cx="210" cy="180" r="220" opacity="0.55"></circle>
+            <circle class="tone-3" cx="1260" cy="140" r="280" opacity="0.42"></circle>
+            <path class="tone-4" d="M0,630 C180,550 330,720 540,650 C760,575 920,735 1140,640 C1265,585 1355,590 1440,610 L1440,900 L0,900 Z" opacity="0.16"></path>
+            <g fill="var(--tone-4)" opacity="0.32">
+              <circle cx="120" cy="290" r="4"></circle>
+              <circle cx="320" cy="210" r="3"></circle>
+              <circle cx="520" cy="330" r="5"></circle>
+              <circle cx="920" cy="220" r="4"></circle>
+              <circle cx="1180" cy="300" r="3"></circle>
+              <circle cx="1320" cy="250" r="4"></circle>
+            </g>
+          </g>
+          <g class="scene-layer scene-layer--mid" data-parallax data-speed="0.34">
+            <circle class="tone-1" cx="1020" cy="260" r="120" opacity="0.9"></circle>
+            <path class="tone-4" d="M280,420 C390,330 510,330 620,420 C720,492 820,500 910,430 C1000,360 1090,360 1200,430" fill="none" stroke="currentColor" stroke-width="20" stroke-linecap="round" opacity="0.55"></path>
+            <path class="tone-3" d="M140,500 C260,430 420,435 520,495 C620,555 760,570 880,500 C980,442 1110,438 1285,520" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" opacity="0.45"></path>
+          </g>
+          <g class="scene-layer scene-layer--front" data-parallax data-speed="0.82">
+            <path class="tone-5" d="M0,710 C120,640 230,610 360,630 C520,655 620,790 780,790 C940,790 1030,680 1185,660 C1295,646 1380,665 1440,690 L1440,900 L0,900 Z"></path>
+            <path class="tone-4" d="M0,760 C120,730 220,740 320,770 C440,805 560,810 690,770 C860,715 980,725 1080,760 C1220,810 1330,805 1440,780" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" opacity="0.55"></path>
+            <circle class="tone-1" cx="142" cy="690" r="10" opacity="0.8"></circle>
+            <circle class="tone-1" cx="1260" cy="706" r="8" opacity="0.72"></circle>
+          </g>
+        </svg>
+      </div>
+
+      <div class="panel__content reveal">
+        <p class="eyebrow">Parallax Journey</p>
+        <h1>Scroll through a living illustration.</h1>
+        <p class="lede">A premium single-page experience that moves from dawn to night with layered depth, smooth rAF-driven motion, and static-friendly deployment for GitHub Pages.</p>
+        <div class="panel__actions">
+          <a class="button button--primary" href="#cloud-cartography">Begin the descent</a>
+          <span class="panel__note"></span>
+        </div>
+        <button class="scroll-indicator" type="button" data-scroll-next aria-label="Scroll to the next section">
+          <span>Scroll</span>
+          <span class="scroll-indicator__chevron" aria-hidden="true">⌄</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="panel panel--reverse" id="cloud-cartography" data-section data-theme="cloud">
+      <div class="panel__scene" aria-hidden="true">
+        <svg class="scene-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+          <g class="scene-layer scene-layer--back" data-parallax data-speed="0.12">
+            <rect class="tone-4" x="150" y="110" width="1140" height="680" rx="54" fill="none" stroke="currentColor" stroke-width="2" opacity="0.2"></rect>
+            <path class="tone-4" d="M220,210 H1220 M220,330 H1220 M220,450 H1220 M220,570 H1220 M220,690 H1220" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.2"></path>
+            <path class="tone-4" d="M260,160 V740 M430,160 V740 M600,160 V740 M770,160 V740 M940,160 V740 M1110,160 V740" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.14"></path>
+          </g>
+          <g class="scene-layer scene-layer--mid" data-parallax data-speed="0.36">
+            <circle class="tone-1" cx="370" cy="260" r="92" opacity="0.86"></circle>
+            <circle class="tone-2" cx="1050" cy="300" r="150" opacity="0.7"></circle>
+            <path class="tone-3" d="M260,470 C420,360 600,360 770,460 C915,545 1080,560 1220,470" fill="none" stroke="currentColor" stroke-width="22" stroke-linecap="round" opacity="0.45"></path>
+            <path class="tone-4" d="M320,560 C470,470 620,470 760,545 C910,625 1050,630 1180,560" fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" opacity="0.42"></path>
+          </g>
+          <g class="scene-layer scene-layer--front" data-parallax data-speed="0.88">
+            <path class="tone-5" d="M160,740 C300,640 470,610 640,652 C790,688 890,735 1040,702 C1160,676 1260,652 1360,670 L1360,900 L160,900 Z"></path>
+            <path class="tone-4" d="M430,390 C492,342 568,330 650,350 C718,366 780,412 830,474" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" opacity="0.55"></path>
+            <path class="tone-1" d="M1020,510 C1048,475 1095,468 1130,490 C1160,508 1175,543 1160,573 C1146,598 1115,610 1088,603 C1048,594 1012,547 1020,510 Z" opacity="0.9"></path>
+            <circle class="tone-2" cx="1125" cy="536" r="10" opacity="0.82"></circle>
+          </g>
+        </svg>
+      </div>
+
+      <div class="panel__content reveal">
+        <p class="eyebrow">Chapter 01</p>
+        <h2>Cloud cartography.</h2>
+        <p class="lede">A pale grid and soft contour lines turn the horizon into a map. The layers drift at different speeds so the scene feels dimensional instead of flat.</p>
+        <div class="fact-row">
+          <span class="pill">3 depth layers</span>
+          <span class="pill">Opacity and transform only</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="tide-lines" data-section data-theme="tide">
+      <div class="panel__scene" aria-hidden="true">
+        <svg class="scene-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+          <g class="scene-layer scene-layer--back" data-parallax data-speed="0.16">
+            <circle class="tone-2" cx="1180" cy="170" r="170" opacity="0.55"></circle>
+            <path class="tone-4" d="M0,510 C160,470 250,470 390,520 C510,560 630,560 770,510 C930,450 1080,450 1260,520 C1330,546 1385,560 1440,552 L1440,900 L0,900 Z" opacity="0.17"></path>
+            <circle class="tone-1" cx="210" cy="260" r="6" opacity="0.7"></circle>
+            <circle class="tone-1" cx="250" cy="300" r="4" opacity="0.5"></circle>
+          </g>
+          <g class="scene-layer scene-layer--mid" data-parallax data-speed="0.38">
+            <path class="tone-1" d="M120,470 C260,380 420,388 530,470 C645,556 765,570 880,500 C980,440 1130,430 1310,530" fill="none" stroke="currentColor" stroke-width="24" stroke-linecap="round" opacity="0.68"></path>
+            <path class="tone-3" d="M160,590 C300,510 430,520 550,595 C650,658 760,674 880,640 C1010,602 1125,578 1320,616" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" opacity="0.5"></path>
+            <path class="tone-4" d="M360,390 C500,310 640,302 785,386 C890,446 1010,460 1160,410" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" opacity="0.42"></path>
+          </g>
+          <g class="scene-layer scene-layer--front" data-parallax data-speed="0.94">
+            <path class="tone-5" d="M0,752 C110,670 220,650 340,670 C460,692 530,760 620,792 C720,828 825,824 920,770 C1015,714 1120,690 1260,710 C1340,724 1398,742 1440,758 L1440,900 L0,900 Z"></path>
+            <path class="tone-4" d="M330,740 C375,690 430,670 490,676 C550,682 598,712 640,760" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" opacity="0.58"></path>
+            <path class="tone-2" d="M1090,710 C1128,676 1172,662 1220,670 C1258,676 1290,695 1320,726" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round" opacity="0.7"></path>
+            <circle class="tone-1" cx="1115" cy="712" r="9" opacity="0.8"></circle>
+          </g>
+        </svg>
+      </div>
+
+      <div class="panel__content reveal">
+        <p class="eyebrow">Chapter 02</p>
+        <h2>Tide lines.</h2>
+        <p class="lede">The color story cools into teal and sea glass. In the foreground, waves stretch a little faster than the scroll, creating the sensation of motion rushing toward you.</p>
+        <div class="fact-row">
+          <span class="pill">requestAnimationFrame loop</span>
+          <span class="pill">Lerped motion</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel panel--reverse" id="glass-city" data-section data-theme="city">
+      <div class="panel__scene" aria-hidden="true">
+        <svg class="scene-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+          <g class="scene-layer scene-layer--back" data-parallax data-speed="0.1">
+            <path class="tone-2" d="M0,210 C180,140 360,120 540,170 C730,220 900,180 1080,130 C1220,94 1340,104 1440,142 L1440,0 L0,0 Z" opacity="0.5"></path>
+            <g fill="var(--tone-4)" opacity="0.24">
+              <circle cx="160" cy="180" r="5"></circle>
+              <circle cx="280" cy="120" r="3"></circle>
+              <circle cx="1260" cy="170" r="4"></circle>
+              <circle cx="1170" cy="250" r="3"></circle>
+              <circle cx="980" cy="190" r="5"></circle>
+            </g>
+          </g>
+          <g class="scene-layer scene-layer--mid" data-parallax data-speed="0.4">
+            <rect class="tone-3" x="180" y="420" width="96" height="290" rx="12" opacity="0.82"></rect>
+            <rect class="tone-1" x="298" y="350" width="118" height="360" rx="14" opacity="0.9"></rect>
+            <rect class="tone-2" x="448" y="280" width="84" height="430" rx="12" opacity="0.72"></rect>
+            <rect class="tone-1" x="970" y="320" width="92" height="390" rx="14" opacity="0.88"></rect>
+            <rect class="tone-3" x="1084" y="250" width="132" height="460" rx="16" opacity="0.76"></rect>
+            <path class="tone-4" d="M110,640 H1320" fill="none" stroke="currentColor" stroke-width="4" opacity="0.24"></path>
+          </g>
+          <g class="scene-layer scene-layer--front" data-parallax data-speed="1.02">
+            <path class="tone-5" d="M0,760 C190,720 320,736 470,782 C610,824 748,830 890,782 C1038,730 1188,716 1440,748 L1440,900 L0,900 Z"></path>
+            <path class="tone-4" d="M620,360 C680,286 774,250 872,254 C966,258 1044,302 1100,378" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" opacity="0.55"></path>
+            <path class="tone-2" d="M760,690 C790,648 840,624 894,626 C946,628 990,652 1018,692" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" opacity="0.72"></path>
+            <circle class="tone-1" cx="878" cy="648" r="10" opacity="0.9"></circle>
+          </g>
+        </svg>
+      </div>
+
+      <div class="panel__content reveal">
+        <p class="eyebrow">Chapter 03</p>
+        <h2>Glass city.</h2>
+        <p class="lede">Vertical forms introduce a tighter rhythm and a sharper silhouette. The foreground towers drift almost as fast as the page itself for a subtle pop-forward effect.</p>
+        <div class="fact-row">
+          <span class="pill">transform3d compositing</span>
+          <span class="pill">Subtle overshoot</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="night-bloom" data-section data-theme="night">
+      <div class="panel__scene" aria-hidden="true">
+        <svg class="scene-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+          <g class="scene-layer scene-layer--back" data-parallax data-speed="0.09">
+            <circle class="tone-2" cx="270" cy="190" r="240" opacity="0.38"></circle>
+            <circle class="tone-3" cx="1200" cy="240" r="170" opacity="0.32"></circle>
+            <path class="tone-4" d="M180,120 L360,180 L520,120 L670,170 L860,105 L1020,180 L1220,130" fill="none" stroke="currentColor" stroke-width="2" opacity="0.38"></path>
+            <g fill="var(--tone-4)" opacity="0.55">
+              <circle cx="180" cy="120" r="4"></circle>
+              <circle cx="360" cy="180" r="4"></circle>
+              <circle cx="520" cy="120" r="5"></circle>
+              <circle cx="670" cy="170" r="4"></circle>
+              <circle cx="860" cy="105" r="5"></circle>
+              <circle cx="1020" cy="180" r="4"></circle>
+              <circle cx="1220" cy="130" r="5"></circle>
+            </g>
+          </g>
+          <g class="scene-layer scene-layer--mid" data-parallax data-speed="0.34">
+            <path class="tone-1" d="M260,480 C420,350 610,350 770,480 C900,585 1030,600 1180,500" fill="none" stroke="currentColor" stroke-width="24" stroke-linecap="round" opacity="0.7"></path>
+            <path class="tone-3" d="M140,620 C300,520 500,526 660,620 C786,695 940,706 1100,630 C1210,578 1310,560 1400,590" fill="none" stroke="currentColor" stroke-width="14" stroke-linecap="round" opacity="0.5"></path>
+            <circle class="tone-2" cx="1008" cy="300" r="96" opacity="0.75"></circle>
+          </g>
+          <g class="scene-layer scene-layer--front" data-parallax data-speed="0.88">
+            <path class="tone-5" d="M0,740 C160,666 300,650 420,682 C540,712 620,772 720,810 C840,852 980,842 1080,782 C1182,720 1290,694 1440,720 L1440,900 L0,900 Z"></path>
+            <path class="tone-4" d="M910,656 C960,618 1012,606 1068,616 C1110,624 1140,642 1174,680" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" opacity="0.6"></path>
+            <path class="tone-1" d="M480,720 C532,676 590,654 650,654 C720,654 778,682 820,732" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" opacity="0.5"></path>
+            <circle class="tone-1" cx="1288" cy="724" r="8" opacity="0.82"></circle>
+          </g>
+        </svg>
+      </div>
+
+      <div class="panel__content reveal">
+        <p class="eyebrow">Chapter 04</p>
+        <h2>Night bloom.</h2>
+        <p class="lede">The palette reaches the deepest blues and violets. Reduced motion users still get the full story with fades and structure, just without the drift.</p>
+        <div class="fact-row">
+          <span class="pill">prefers-reduced-motion aware</span>
+          <span class="pill">Mobile intensity scaled down</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel panel--reverse panel--closing" id="launch-point" data-section data-theme="launch">
+      <div class="panel__scene" aria-hidden="true">
+        <svg class="scene-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+          <g class="scene-layer scene-layer--back" data-parallax data-speed="0.08">
+            <circle class="tone-2" cx="1140" cy="180" r="260" opacity="0.4"></circle>
+            <circle class="tone-3" cx="280" cy="260" r="180" opacity="0.3"></circle>
+            <g fill="var(--tone-4)" opacity="0.38">
+              <circle cx="120" cy="160" r="3"></circle>
+              <circle cx="260" cy="110" r="4"></circle>
+              <circle cx="490" cy="150" r="3"></circle>
+              <circle cx="930" cy="118" r="4"></circle>
+              <circle cx="1230" cy="120" r="3"></circle>
+            </g>
+          </g>
+          <g class="scene-layer scene-layer--mid" data-parallax data-speed="0.28">
+            <path class="tone-1" d="M290,520 C430,420 620,380 780,430 C950,485 1040,572 1115,648" fill="none" stroke="currentColor" stroke-width="26" stroke-linecap="round" opacity="0.7"></path>
+            <path class="tone-3" d="M260,610 C420,540 620,540 770,610 C900,670 1070,682 1180,630" fill="none" stroke="currentColor" stroke-width="12" stroke-linecap="round" opacity="0.52"></path>
+            <circle class="tone-2" cx="840" cy="290" r="92" opacity="0.8"></circle>
+          </g>
+          <g class="scene-layer scene-layer--front" data-parallax data-speed="0.82">
+            <path class="tone-5" d="M0,760 C180,700 360,688 520,718 C650,742 770,820 920,828 C1100,838 1210,742 1440,712 L1440,900 L0,900 Z"></path>
+            <path class="tone-4" d="M560,720 H880" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" opacity="0.6"></path>
+            <path class="tone-2" d="M680,572 C736,522 804,500 882,504 C958,508 1020,536 1064,584" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" opacity="0.74"></path>
+            <circle class="tone-1" cx="914" cy="556" r="10" opacity="0.82"></circle>
+          </g>
+        </svg>
+      </div>
+
+      <div class="panel__content reveal">
+        <p class="eyebrow">Finale</p>
+        <h2>Ready for launch?</h2>
+        <p class="lede">This is a static-only build that is safe for GitHub Pages, with every asset path kept relative so the site works from a repository subpath as well as a root domain.</p>
+        <div class="panel__actions">
+          <a class="button button--primary" href="mailto:hello@example.com">Start a conversation</a>
+          <a class="button button--ghost" href="#home">Back to top</a>
+        </div>
+        <footer class="site-footer">
+          <p>Built with semantic HTML, GPU-friendly transforms, and progressive enhancement for motion-sensitive users.</p>
+        </footer>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

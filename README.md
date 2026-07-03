@@ -24,9 +24,10 @@ Using VS Code:
 2. Open the repository settings.
 3. Go to Settings -> Pages.
 4. Under Source, choose Deploy from a branch.
-5. Select the `main` branch and the `/root` folder.
+5. Select the `gh-pages` branch and the `/root` folder.
 6. Save the settings.
-7. After GitHub finishes publishing, the site will be available at `https://<username>.github.io/<repo-name>/`.
+7. Push to `main` to trigger the workflow, then wait for the `gh-pages` branch to update.
+8. After GitHub finishes publishing, the site will be available at `https://<username>.github.io/<repo-name>/`.
 
 ## Notes
 
